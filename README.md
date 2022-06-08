@@ -1,65 +1,39 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## About this project
+<div class="container">
+<h1>Day 1</h1>
+<h2>Whit should i do Today.</h2>
+<h3><b>1.</b> First Step</h3>
+<p>download composer from <a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a> and install it.</p>
+<h3><b>2.</b> Second Step</h3>
+<p>Create Folder From a Desktop this <strong>Name:-</strong>Blog</p>
+<img src="{{ asset('readme_images/01.PNG') }}" alt="readme_images/01.PNG" width="500">
+<h3><b>3.</b> Third Step</h3>
+<p>search <b>command prompt</b> on our search bar  and open it.</p>
+<img src="{{ asset('readme_images/02.PNG') }}" alt="readme_images/02.PNG" width="500">
 
-## About Laravel
+<h3><b>4.</b>Four Step</h3>
+<p>type there: <b>cd desktop/blog</b> and press the enter. look their image, terminal are goes inside the desktop blog directory.</p>
+<img src="{{ asset('readme_images/03.PNG') }}" alt="readme_images/03.PNG" width="500">
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h3><b>5.</b>Five Step</h3>
+<h4>Create a Laravel Project:</h4>
+<p>i will create laravel 9 application. inside the before i will create block directory.</p>
+<h4>after complete step 4, i have create laravel application in this laravel command.</h4>
+<b style="background:#292D3E; color:#BFC7D5; padding:5px 50px;">laravel new app-name</b>
+<p>this is command for making laravel project. <pre>more details see the below image.</pre></p>
+<img src="{{ asset('readme_images/04.PNG') }}" alt="readme_images/04.PNG" width="500">
+<p>here image i have create my laravel project/app name is <b> blog</b></p>
+<p>after the type <b>laravel new app-naem </b>press the enter and wait some minutes, will be completed the laravel app/project installation.</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h4>after the completed installation</h4>
+<p>Open you will be created forlder look their created once new folder inside the created folder. this is the laravel app/project <b>see the below image</b></p>
+<img src="{{ asset('readme_images/05.PNG') }}" alt="readme_images/05.PNG" width="500">
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h2>inside the project/app folder </h2>
+<p>see the below image</p>
+<img src="{{ asset('readme_images/06.PNG') }}" alt="readme_images/06.PNG" width="500">
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Build-a-blog-with-Laravel_9
+</div>
