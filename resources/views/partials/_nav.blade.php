@@ -25,10 +25,10 @@
                     </li>
                 </ul>
 
-                <div class="dropdown" style="margin-right:50px; list-style: none; cursor: pointer;">
+                <div class="dropdown" style="margin-right:100px; list-style: none; cursor: pointer;">
                     <li class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Dropdown button
+                        My Account
                     </li>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Action</a></li>
