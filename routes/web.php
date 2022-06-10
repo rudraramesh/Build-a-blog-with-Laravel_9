@@ -19,5 +19,5 @@ use App\Http\Controllers\PostController;
 Route::get('/',[PagesController::class, 'getIndex'] );
 Route::get('about',[PagesController::class, 'getAbout'] );
 Route::get('contact',[PagesController::class, 'getContact'] );
-Route::get('posts',[PostController::class,'create']);
+Route::resource('posts',PostController::class);
 
