@@ -24,7 +24,9 @@
                     {!! Html::linkRoute('posts.edit','Edit',array($post->id),array('class'=>'btn btn-primary btn-block w-100')) !!}
                 </div>
                 <div class="col-sm-6">
-                    {!! Html::linkRoute('posts.destroy','Delete',array($post->id),array('class'=>'btn btn-danger btn-block w-100')) !!}
+                    {!! Form::open(['route'=>['posts.destroy',$post->id],'method'=>'DELETE']) !!}
+                    {!! Form::submit('Delete',['class'=>'btn btn-danger w-100']) !!}
+                {!! Form::close() !!}
                 </div>
             </div>
     </div>
