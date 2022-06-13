@@ -11,17 +11,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link {{ Request::is('/') ? "active": ""}}" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link {{ Request::is('about') ? "active": ""}}" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">
+                        <a class="nav-link {{ Request::is('contact') ? "active": ""}}" href="/contact">
                             Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link {{ Request::is('blog') ? "active": ""}}" href="#">Blog</a>
                     </li>
                 </ul>
 
