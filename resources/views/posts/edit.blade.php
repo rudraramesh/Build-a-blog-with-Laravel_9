@@ -2,7 +2,7 @@
 @section('title','Edit Blog Post')
 @section('content')
 
-{!! Form::model($post,['route'=>['posts.update',$post->id]])  !!}
+{!! Form::model($post,['route'=>['posts.update',$post->id],'method'=>'PUT'])  !!}
 <div class="row">
     <div class="col-md-8">
         {{Form::label('title','Titles:')}}
@@ -28,7 +28,7 @@
                     {!! Html::linkRoute('posts.show','Cancel',array($post->id),array('class'=>'btn btn-danger btn-block w-100')) !!}
                 </div>
                 <div class="col-sm-6">
-                    {!! Html::linkRoute('posts.update','Save Changes',array($post->id),array('class'=>'btn btn-success btn-block w-100')) !!}
+                    {{Form::submit('Save Changes',['class'=>'btn btn-success w-100'])}}
                 </div>
             </div>
     </div>
