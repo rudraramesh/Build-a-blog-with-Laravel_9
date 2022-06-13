@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
 
 class PagesController extends Controller
 {
     public function getIndex(){
-        return view('pages.welcome');
+        $posts = Post::orderBy('created_at','desc')->limit(4)->get();
+        // dd($posts);
+        return view('pages.welcome')->withPosts($posts);
 
     }
     public function getAbout(){
