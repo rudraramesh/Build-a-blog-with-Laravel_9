@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\PostController;
 |
 */
 
-
+Route::get('blog/{slug}',['as'=>'blog.single','uses'=>'App\Http\Controllers\BlogController@getSingle'])->where('slug','[\w\d\-\_]+');
 Route::get('/',[PagesController::class, 'getIndex'] );
 Route::get('about',[PagesController::class, 'getAbout'] );
 Route::get('contact',[PagesController::class, 'getContact'] );
