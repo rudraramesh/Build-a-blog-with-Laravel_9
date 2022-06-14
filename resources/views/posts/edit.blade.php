@@ -8,6 +8,9 @@
         {{Form::label('title','Titles:')}}
         {{ Form::text('title',null,["class"=>'form-control input-lg']) }}
 
+        {{ Form::label('slug','Slug:',['class'=>'form-specing-top']) }}
+        {{ Form::text('slug',null, ['class'=>'form-control']) }}
+
         {{Form::label('body','Body:',['class'=>'form-specing-top'])}}
         {{Form::textarea('body',null, ['class'=>'form-control']) }}
 
