@@ -57,4 +57,11 @@ class AuthController extends Controller
         
     }
 
+
+    public function getLogout(){
+        if(Session::has('loginId')){
+            Session::pull('loginId');
+            return redirect('auth/login');
+        }
+    }
 }
