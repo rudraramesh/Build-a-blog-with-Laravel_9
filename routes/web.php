@@ -20,7 +20,7 @@ use App\Http\Controllers\AuthController;
 // authentication routes
 Route::get('auth/login',[AuthController::class,'getLogin']);
 Route::post('auth/login',[AuthController::class,'postLogin']);
-Route::get('auth/logout',[AuthController::class,'getLogout']);
+Route::get('auth/logout',[AuthController::class,'getLogout'])->name('logout');
 
 // Registration routes
 Route::get('auth/register',[AuthController::class,'getRegister']);

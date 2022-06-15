@@ -35,7 +35,7 @@
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                         <hr>
-                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        <li><a class="dropdown-item" href="{{ route('logout') }}">Log Out</a></li>
                     </ul>
                 </div>
 

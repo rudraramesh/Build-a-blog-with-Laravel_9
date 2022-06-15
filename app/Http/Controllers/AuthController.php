@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\UserM;
 use Hash;
+use Session;
+use Auth;
 
 class AuthController extends Controller
 {
@@ -34,4 +36,25 @@ class AuthController extends Controller
             return back()->with('error','something wrong');
         }
     }
+
+    public function postLogin(Request $request){
+        $request->validate([
+            'email'=>'required|email',
+            'password'=>'required|min:6|max:20'
+        ]);
+        $user = UserM::where('email','=',$request->email)->first();
+        if($user){
+            if(Hash::check($request->password,$user->password)){
+                $request->session()->put('loginId',$user->id);
+                return redirect('/');
+            }else{
+
+            }return back()->with('error','password is not match');
+
+        }else{
+            return back()->with('error', 'this email is not register');
+        }
+        
+    }
+
 }
