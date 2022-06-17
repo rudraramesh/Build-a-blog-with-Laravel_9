@@ -28,6 +28,9 @@
 
         {{ Form::submit('Login',['class'=>'btn btn-success w-100']) }}
 
+        <p><a href="{{ route('password.request') }}">Forget Password</a></p>
+        
+
         {!! Form::close()  !!}
     </div>
 </div>
