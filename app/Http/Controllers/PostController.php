@@ -23,7 +23,7 @@ class PostController extends Controller
         $posts = Post::orderBy('id','desc')->Paginate(2);
         // dd($posts);
         // return  a view and pass in the above variable
-        return view('posts.index')->with(compact('posts',$posts));
+        return view('posts.index')->with('posts',$posts);
     }
 
     /**
