@@ -9,7 +9,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">Reset Password</div>
             @if(session('status'))
-            <p>{{session('status')}}</p>
+            <p class="btn btn-success">{{session('status')}}</p>
             @elseif(session('email'))
             <p>{{session('email')}}</p>
             <div class="panel-body">

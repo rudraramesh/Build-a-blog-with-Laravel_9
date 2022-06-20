@@ -5,6 +5,14 @@
 
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
+      {{-- forget password msg start --}}
+      @if(session('status'))
+      <p class="btn btn-success">{{session('status')}}</p>
+      @elseif(session('email'))
+      <p class="btn btn-danger">{{session('email')}}</p>
+      <div class="panel-body">
+          @endif
+          {{-- forget password msg end --}}
         {!! Form::open() !!}
         @if(Session::has('success'))
         <div class="alert alert-success">
