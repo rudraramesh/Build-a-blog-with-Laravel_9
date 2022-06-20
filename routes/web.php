@@ -6,6 +6,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PasswordController;
+use App\Http\Controllers\CategoryController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
@@ -86,6 +87,10 @@ Route::post('reset-password', function (Request $request) {
 })->middleware('guest')->name('password.update');
 
 
+
+// categories
+
+Route::resource('categories',CategoryController::class,['except'=>['create']]);
 
 Route::get('blog/{slug}',['as'=>'blog.single','uses'=>'App\Http\Controllers\BlogController@getSingle'])->where('slug','[\w\d\-\_]+');
 Route::get('blog',['uses'=>'App\Http\Controllers\BlogController@getIndex','as'=>'blog.index']);
