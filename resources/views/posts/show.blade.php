@@ -12,7 +12,7 @@
     <div class="well">
         <dl class="dl-horizontal">
             <dt>Url:</dt>
-            <dd><a href="{{ route('blog.single', $post->slug) }}">{{route('blog.single', $post->slug)}}</a></dd>
+            <p><a href="{{ route('blog.single', $post->slug) }}">{{route('blog.single', $post->slug)}}</a></p>
         </dl>
         <dl class="dl-horizontal">
             <dt>Create At:</dt>
@@ -31,6 +31,12 @@
                     {!! Form::open(['route'=>['posts.destroy',$post->id],'method'=>'DELETE']) !!}
                     {!! Form::submit('Delete',['class'=>'btn btn-danger w-100']) !!}
                 {!! Form::close() !!}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    {{ Html::linkRoute('posts.index', '<< See All Posts', array(), ['class' => 'btn btn-default btn-block btn-h1-spacing']) }}
                 </div>
             </div>
     </div>

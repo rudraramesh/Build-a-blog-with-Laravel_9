@@ -87,7 +87,7 @@ Route::post('reset-password', function (Request $request) {
 
 
 
-Route::get('blog/{slug}',['as'=>'blog.single','uses'=>'App\Http\Controllers\BlogController@getIndex'])->where('slug','[\w\d\-\_]+');
+Route::get('blog/{slug}',['as'=>'blog.single','uses'=>'App\Http\Controllers\BlogController@getSingle'])->where('slug','[\w\d\-\_]+');
 Route::get('blog',['uses'=>'App\Http\Controllers\BlogController@getIndex','as'=>'blog.index']);
 Route::get('/',[PagesController::class, 'getIndex'] );
 Route::get('about',[PagesController::class, 'getAbout'] );
